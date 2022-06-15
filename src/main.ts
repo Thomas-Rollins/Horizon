@@ -15,7 +15,7 @@ export const client = new Client({
     ],
     // #TODO: Update to use API
     // botGuilds: [(client) => client.guilds.cache.map((guild) => guild.id)],
-    botGuilds: ['839219190619570249'],
+    botGuilds: [process.env.HORIZON_GUILD_ID],
 });
 
 client.once("ready", async () => {
